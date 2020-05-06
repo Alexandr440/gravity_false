@@ -1,0 +1,9 @@
+.m-main {
+  height: 500px;
+  width: 100%;
+  background: red url("../img/mon/mon_header/m_header.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=m_header.css.map */

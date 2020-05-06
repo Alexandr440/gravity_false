@@ -1,0 +1,31 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat Alternates Light';
+    src: url('../font/MontserratAlternates-Light.eot');
+    src: url('../font/MontserratAlternates-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/MontserratAlternates-Light.woff') format('woff'),
+    url('../font/MontserratAlternates-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat Alternates Bold';
+    src: url('../font/MontserratAlternates-Bold.eot');
+    src: url('../font/MontserratAlternates-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/MontserratAlternates-Bold.woff') format('woff'),
+    url('../font/MontserratAlternates-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@mixin montl {
+    font-family: 'Montserrat Alternates Light';
+
+}
+
+@mixin montb {
+    font-family: 'Montserrat Alternates Bold';
+
+}

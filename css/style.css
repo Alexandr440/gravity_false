@@ -1,0 +1,1274 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat Alternates Light';
+  src: url("../font/MontserratAlternates-Light.eot");
+  src: url("../font/MontserratAlternates-Light.eot?#iefix") format("embedded-opentype"), url("../font/MontserratAlternates-Light.woff") format("woff"), url("../font/MontserratAlternates-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat Alternates Bold';
+  src: url("../font/MontserratAlternates-Bold.eot");
+  src: url("../font/MontserratAlternates-Bold.eot?#iefix") format("embedded-opentype"), url("../font/MontserratAlternates-Bold.woff") format("woff"), url("../font/MontserratAlternates-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+  width: 100vw;
+  background-color: #000;
+}
+
+.navbar-block {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 50px 0;
+}
+
+.catalog__title {
+  padding: 50px 0 30px;
+  font-family: 'Montserrat Alternates Light';
+  font-size: 30px;
+}
+
+.catalog-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #3d3d3d;
+  width: 350px;
+  border: 1px solid red;
+  margin: 10px;
+}
+
+.catalog-card:hover .card-item__over {
+  opacity: 1;
+}
+
+.catalog-card__option {
+  padding: 10px 15px;
+  background-color: #3d3d3d;
+}
+
+.catalog-card__item {
+  display: block;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.catalog-card__item img {
+  position: absolute;
+  left: calc(50% - 200px);
+  top: calc(50% - 125px);
+  width: 400px;
+  height: 250px;
+  z-index: 100;
+}
+
+.catalog-card__title {
+  margin-bottom: 15px;
+}
+
+.catalog-card__title h3 {
+  margin: 0;
+  font-size: 30px;
+  font-family: 'Montserrat Alternates Light';
+}
+
+.catalog-card__title h3 a {
+  text-decoration: none;
+  color: #eff1e7;
+  padding: 0;
+}
+
+.card-item__over {
+  display: block;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 700;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+
+.card-item__text {
+  color: #eff1e7;
+  font-size: 14px;
+  font-family: 'Montserrat Alternates Light';
+  line-height: 1.7;
+}
+
+.card-item__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-item__age {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 700;
+  padding: 5px 15px;
+  bottom: 20px;
+  left: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9b59b5), to(#8635a8));
+  background: linear-gradient(#9b59b5, #8635a8);
+  color: #eff1e7;
+  border-radius: 15px;
+}
+
+.icon-quest {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-quest:before {
+  position: absolute;
+  content: "\f059";
+  top: 0px;
+  left: 2px;
+  font-family: FontAwesome;
+  font-size: 15px;
+  font-style: normal;
+  color: #eff1e7;
+}
+
+.city-street {
+  font-size: 14px;
+  color: #afb986;
+  font-family: 'Montserrat Alternates Light';
+}
+
+.icon-city {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+}
+
+.icon-city:before {
+  position: absolute;
+  content: "\f041";
+  top: 2px;
+  left: 2px;
+  height: 50px;
+  width: 50px;
+  font-family: FontAwesome;
+  font-size: 20px;
+  font-style: normal;
+  color: #afb986;
+}
+
+.card-options__quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-human {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid #eff1e7;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  color: #eff1e7;
+}
+
+.icon-human:before {
+  position: absolute;
+  content: "\f2c0";
+  top: 2px;
+  left: 2px;
+  height: 50px;
+  width: 50px;
+  font-family: FontAwesome;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900px;
+}
+
+.human-time {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.icon-time {
+  display: inline-block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.icon-time:before {
+  position: absolute;
+  content: "\f017";
+  top: -3px;
+  left: 0px;
+  height: 50px;
+  width: 50px;
+  font-family: FontAwesome;
+  font-size: 27px;
+  font-style: normal;
+}
+
+.icon-quality {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid #eff1e7;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  color: #eff1e7;
+}
+
+.icon-quality:before {
+  position: absolute;
+  content: "\f084";
+  top: 3px;
+  left: 3px;
+  height: 40px;
+  width: 40px;
+  font-family: FontAwesome;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900px;
+}
+
+.human-quality {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.catalog-card__price {
+  padding: 15px 15px 20px;
+  background-color: #242424;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.price-block {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+.price-block__desc {
+  font-family: 'Montserrat Alternates Light';
+  font-size: 14px;
+  color: #afb986;
+  margin-bottom: 5px;
+}
+
+.price-block__number {
+  font-family: 'Montserrat Alternates Bold';
+  font-size: 18px;
+}
+
+.price-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  align-items: center;
+}
+
+.link {
+  position: relative;
+  display: block;
+  height: 250px;
+  width: 400px;
+  overflow: hidden;
+  background: #000;
+}
+
+.link img {
+  position: absolute;
+  left: calc(50% - 200px);
+  top: calc(50% - 125px);
+  width: 400px;
+  height: 250px;
+  z-index: 100;
+}
+
+.over {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 700;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  display: block;
+  position: absolute;
+  z-index: 2000;
+  color: #eff1e7;
+}
+
+.main {
+  background: #242424;
+}
+
+.main-block {
+  padding: 50px 0;
+}
+
+.main-block__title {
+  color: #eff1e7;
+  font-family: 'Montserrat Alternates Light';
+  font-size: 20px;
+}
+
+.main-block__description {
+  color: #eff1e7;
+  font-family: 'Montserrat Alternates Light';
+  font-size: 14px;
+  line-height: 25px;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #2a2e46;
+  color: white;
+  overflow-x: hidden;
+}
+
+*, h1, h2, h3 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-primary a {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffbd19), to(#f69600));
+  background: linear-gradient(180deg, #ffbd19, #f69600);
+  padding: 5px 18px;
+  text-decoration: none;
+  border-radius: 3px;
+  color: #000;
+  line-height: 1.4;
+  font-family: 'Montserrat Alternates Light';
+  cursor: pointer;
+  border-top: 1px solid #ffe6ad;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(250, 250, 250, 0.9);
+}
+
+.btn-primary a:hover {
+  background: #fec748;
+}
+
+.btn-primary a:active {
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
+}
+
+.btn-primary a:focus {
+  outline: none;
+}
+
+.m_header {
+  margin-bottom: 150px;
+}
+
+.offer {
+  width: 100vw;
+  background: #213b37 url("../img/mon/mon_header/m_header.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offer-block {
+  padding-top: 200px;
+  margin-bottom: 70px;
+}
+
+.offer-block__title {
+  display: block;
+  font-family: 'Montserrat Alternates Bold';
+}
+
+.offer-block__title h1 {
+  display: block;
+  font-size: 60px;
+}
+
+.offer-block__description {
+  font-family: 'Montserrat Alternates Light';
+  font-size: 36px;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-bottom: 150px;
+}
+
+.options__gamer {
+  border-left: 1px solid #eff1e7;
+  border-top: 1px solid #eff1e7;
+  padding: 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.options__gamer-text {
+  font-size: 12px;
+  font-family: 'Montserrat Alternates Light';
+  margin-bottom: 10px;
+}
+
+.options__gamer-number {
+  font-size: 25px;
+  font-family: 'Montserrat Alternates Light';
+}
+
+.options__time {
+  border-left: 1px solid #eff1e7;
+  border-top: 1px solid #eff1e7;
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.options__time-text {
+  font-size: 12px;
+  font-family: 'Montserrat Alternates Light';
+  margin-bottom: 10px;
+}
+
+.options__time-number {
+  font-size: 25px;
+  font-family: 'Montserrat Alternates Light';
+}
+
+.options__price {
+  border-left: 1px solid #eff1e7;
+  border-top: 1px solid #eff1e7;
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.options__price-text {
+  font-size: 12px;
+  font-family: 'Montserrat Alternates Light';
+  margin-bottom: 10px;
+}
+
+.options__price-number {
+  font-size: 25px;
+  font-family: 'Montserrat Alternates Light';
+}
+
+.options__level {
+  border-left: 1px solid #eff1e7;
+  border-top: 1px solid #eff1e7;
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.options__level-text {
+  font-size: 12px;
+  font-family: 'Montserrat Alternates Light';
+  margin-bottom: 10px;
+}
+
+.options__level-number {
+  font-size: 25px;
+  font-family: 'Montserrat Alternates Light';
+}
+
+.options__crayzy {
+  border-left: 1px solid #eff1e7;
+  border-top: 1px solid #eff1e7;
+  padding: 20px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.options__crayzy-text {
+  font-size: 12px;
+  font-family: 'Montserrat Alternates Light';
+  margin-bottom: 10px;
+}
+
+.options__crayzy-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.options__crayzy-number img {
+  display: block;
+  padding: 0 5px;
+}
+
+.options__age {
+  padding: 20px 25px;
+  border-left: 1px solid #eff1e7;
+  border-top: 1px solid #eff1e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.options__age-text {
+  font-size: 12px;
+  font-family: 'Montserrat Alternates Light';
+  margin-bottom: 10px;
+}
+
+.options__age-number {
+  font-size: 25px;
+  font-family: 'Montserrat Alternates Light';
+}
+
+.section-quest {
+  margin-bottom: 100px;
+}
+
+.quest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.quest__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding-right: 60px;
+}
+
+.quest__desc-title {
+  margin-bottom: 40px;
+}
+
+.quest__desc-title h2 {
+  font-size: 36px;
+  font-family: 'Montserrat Alternates Bold';
+}
+
+.quest__desc-text p {
+  line-height: 2;
+  color: #a5a5a5;
+  font-size: 18px;
+  font-family: 'Montserrat Alternates Light';
+  margin-bottom: 40px;
+}
+
+.quest-slider {
+  display: block;
+  width: 45%;
+}
+
+.sl1 {
+  position: relative;
+  display: block;
+  width: 530px;
+  height: 330px;
+  z-index: 100;
+}
+
+.sl1__item {
+  cursor: pointer;
+  z-index: 200;
+}
+
+.sl2 {
+  margin-top: 10px;
+  display: block;
+  width: 530px;
+  height: 84px;
+}
+
+.sl2__item {
+  height: 80px;
+  cursor: pointer;
+  z-index: 200;
+  margin: 0 1px;
+  background-color: #2a2e46;
+  padding: 2px;
+  tpansition: all 3s;
+}
+
+.sl2__item img {
+  height: 100%;
+  width: 100%;
+}
+
+.sl2__item.slick-current {
+  background-color: #feb815;
+}
+
+.prev, .next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 200;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  top: calc(50% - 10px);
+  opacity: 1;
+  background-color: #2a2e46;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+  opacity: 0.5;
+}
+
+.next {
+  right: -10px;
+}
+
+.fa-caret-left {
+  margin-top: 2px;
+  margin-right: 6px;
+  color: #feb815;
+  text-shadow: 0.3px 0.3px 0 black;
+}
+
+.fa-caret-right {
+  margin-top: 2px;
+  margin-left: 5px;
+  color: #feb815;
+  text-shadow: 0.3px 0.3px 0 black;
+}
+
+.prev {
+  left: -10px;
+}
+
+.reviews__title {
+  font-family: 'Montserrat Alternates Bold';
+  margin-bottom: 50px;
+}
+
+.reviews__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews-card {
+  position: relative;
+  width: 370px;
+  margin-bottom: 30px;
+  padding: 30px;
+  -webkit-box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.8);
+          box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  background-image: url("../img/mon/mon_rev/444.png");
+  background-color: #40455a;
+  background-repeat: no-repeat;
+}
+
+.reviews-card__user {
+  position: absolute;
+  top: 65px;
+  right: 0px;
+  height: 5px;
+  width: 160px;
+  border-top: 1px solid #2f3449;
+  border-bottom: 1px solid #4d5163;
+  background-color: #3b3f54;
+  z-index: 30;
+}
+
+.reviews-card__user:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url("../img/mon/mon_rev/user.png");
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  top: -38px;
+  right: 25%;
+  border: 3px solid #40455a;
+  z-index: 200;
+}
+
+.reviews-card__title {
+  margin-bottom: 100px;
+  font-family: 'Montserrat Alternates Light';
+  font-size: 18px;
+}
+
+.reviews-card__text {
+  font-size: 12px;
+  font-family: 'Montserrat Alternates Light';
+  color: #b0b2b8;
+  line-height: 2;
+}
+/*# sourceMappingURL=style.css.map */

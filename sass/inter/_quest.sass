@@ -1,0 +1,117 @@
+.section-quest
+    margin-bottom: 100px
+   
+.quest
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    
+
+    &__desc
+        display: flex
+        flex-direction: column
+        width: 50%
+        padding-right: 60px
+
+        &-title
+            margin-bottom: 40px
+            h2
+                font-size: 36px
+                +montb
+                //letter-spacing: 5px
+        &-text
+            
+            p
+                line-height: 2
+                color: #a5a5a5
+                font-size: 18px
+                +montl
+                margin-bottom: 40px
+     
+    &-slider
+        display: block
+        width: 45%
+        
+.sl1 
+    position: relative        
+    display: block 
+    width: 530px
+    height: 330px 
+    //owerflow:  hidden    
+    z-index: 100
+    &__item 
+        //position: absolute
+        cursor: pointer
+        z-index: 200
+        //border: 2px solid $white           
+            
+.sl2 
+    margin-top: 10px
+    display: block 
+    width: 530px
+    height: 84px  
+    //overflow: hidden           
+      
+    &__item 
+
+        height: 80px     
+        cursor: pointer
+        z-index: 200
+        margin: 0 1px
+        background-color: $bgc
+        padding: 2px 
+        tpansition: all 3s               
+        //border: 1px solid $white 
+        
+       
+        img
+            height: 100%
+            width: 100%
+            
+.sl2__item.slick-current
+    background-color:  $yellow
+
+                
+
+.prev,.next
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute         
+    z-index: 200   
+    height: 40px
+    width: 40px 
+    border-radius: 50%  
+    top: calc(50% - 10px) 
+    opacity: 1 
+    background-color: $bgc
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.8)
+    cursor:  pointer
+    &:hover
+        opacity: 0.5
+
+
+    
+
+.next       
+	right: -10px
+    
+   
+.fa-caret-left 
+    margin-top: 2px    
+    margin-right: 6px    
+    color: $yellow
+    text-shadow: 0.3px 0.3px 0 rgba(0,0,0,1)
+
+.fa-caret-right 
+    margin-top: 2px    
+    margin-left: 5px    
+    color: $yellow
+    text-shadow: 0.3px 0.3px 0 rgba(0,0,0,1)
+    
+
+   
+     
+    
+.prev  
+	left: -10px       
