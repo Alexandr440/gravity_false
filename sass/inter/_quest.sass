@@ -5,29 +5,25 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    
-
     &__desc
         display: flex
         flex-direction: column
         width: 50%
         padding-right: 60px
-
         &-title
             margin-bottom: 40px
             h2
                 font-size: 36px
                 +montb
                 //letter-spacing: 5px
-        &-text
-            
+        &-text 
+
             p
                 line-height: 2
                 color: #a5a5a5
                 font-size: 18px
                 +montl
-                margin-bottom: 40px
-     
+                margin-bottom: 40px     
     &-slider
         display: block
         width: 45%
@@ -40,7 +36,7 @@
     //owerflow:  hidden    
     z-index: 100
     &__item 
-        //position: absolute
+        position: absolute
         cursor: pointer
         z-index: 200
         //border: 2px solid $white           
@@ -53,19 +49,15 @@
     //overflow: hidden           
       
     &__item 
-
         height: 80px     
         cursor: pointer
         z-index: 200
-        margin: 0 1px
         background-color: $bgc
         padding: 2px 
         tpansition: all 3s               
         //border: 1px solid $white 
-        
        
-        img
-            height: 100%
+        img           
             width: 100%
             
 .sl2__item.slick-current
@@ -88,10 +80,7 @@
     box-shadow: 1px 1px 4px rgba(0,0,0,0.8)
     cursor:  pointer
     &:hover
-        opacity: 0.5
-
-
-    
+        opacity: 0.5   
 
 .next       
 	right: -10px
@@ -109,9 +98,46 @@
     color: $yellow
     text-shadow: 0.3px 0.3px 0 rgba(0,0,0,1)
     
-
-   
-     
-    
 .prev  
-	left: -10px       
+	left: -10px 
+
+    
+@media (max-width: 430px) 
+     
+    .quest
+        display: flex
+        flex-direction: column
+        &__desc
+            width: 100%
+            padding-right: 0
+            margin-bottom: 50px
+            &-title
+                margin-bottom: 30px
+                h2
+                    font-size: 24px
+            &-text
+                p
+                    margin-top: 0
+        &-slider
+            width: 100%
+
+    .sl1
+        width: 100%
+        height: auto
+        &__item
+            img
+                width: 100%
+
+    .sl2
+        width: 100%
+        height: auto
+        &__item
+            img
+                width: 100%
+    
+
+            
+            
+       
+ 
+          

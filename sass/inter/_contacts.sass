@@ -1,0 +1,112 @@
+.contacts
+    &-section
+        margin-bottom: 100px
+    &__title
+        position: relative
+        +montb
+        margin-bottom: 50px
+        &:before
+            position: absolute
+            display: block                
+            content: ""   
+            width: 30%
+            height: 2px           
+            top: 50%
+            right: 0                           
+            z-index: 200
+            background-color: #40455a
+            
+    &__menu
+        display: flex
+        justify-content: space-between
+        background-color: #40455a
+        
+        padding: 30px 55px
+        border-radius: 20px 20px 0 0
+        background-image: url('../img/mon/mon_rev/444.png')
+        background-repeat: no-repeat
+        box-shadow: -1px -1px 4px rgba(0,0,0,0.8)
+    &__address
+        display: flex
+        align-items: center
+        position: relative
+        font-size: 18px
+        +montl
+
+    &__maps
+        display: block
+        height: 400px
+        background-color: #fff
+
+    &__phone
+        display: flex
+        align-items: center
+        a
+            display: block
+            color: #fff
+            text-decoration: none
+    &__social-network
+        display: flex   
+        a
+            display: flex
+            background-color: #2a2e46
+            height: 35px
+            width: 35px
+            
+            border-radius: 5px
+            margin: 0 10px
+            text-decoration: none
+            text-align: center
+            justify-content: center
+            transition: background-color 1s
+            &:hover
+                background-color: #40455a
+
+
+            
+.fa-map-marker
+    padding-right: 15px    
+    margin-left: 5px
+    //color: red
+
+    
+    //font-size: 20px
+    color: #fff
+i.social-icon
+    display: block
+    color: $white
+    font-size: 24px
+    line-height: 1.4
+    &:hover
+        color: darken($white, 30%)
+
+i.phone-icon
+    font-size: 24px
+    padding-right: 15px    
+    color: $white
+    padding-top: 3px
+i.marker-icon
+    font-size: 24px
+    padding-right: 15px   
+
+@media (max-width: 430px) 
+    .contacts
+        &-section
+            margin-bottom: 70px
+        
+        &__title
+            h2
+                font-size: 24px
+            &:before               
+                width: 30%
+        &__menu
+            flex-direction: column
+            padding: 30px 15px
+        &__address
+            margin-bottom: 15px
+        &__social-network
+            margin-bottom: 15px
+    
+
+
+

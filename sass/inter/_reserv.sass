@@ -1,0 +1,94 @@
+.reservation
+  //: 900px
+  //background-color: #fff
+  margin-bottom: 150px
+  &-description
+    margin-bottom: 50px    
+    color: #ffffff
+    +montl
+    
+    
+    &__working-days,&__holidays      
+      +montb
+      font-size: 18px
+      color: #fff48e
+      line-height: 1.5 
+      //border-bottom: solid 1px  rgba(#ffffff, 0.8)
+      //border-left: 3px solid #000
+      //border-bottom: 3px solid #000
+      //border-radius:  20px
+      display: inline-block
+      //padding: 10px 30px
+      
+      margin-bottom: 10px
+      letter-spacing: 1px
+    p
+      +montl
+      color: #b0b2b8        
+      display: block
+      margin-bottom: 30px
+      margin-top: 5px
+      line-height: 1.2
+      span
+        padding:  5px 15px
+        background: linear-gradient(#9b59b5, #8635a8)
+        border-radius: 15px
+        color: #fff
+      
+        
+  &-title    
+    position: relative
+    +montb
+    margin-bottom: 50px
+    &:before
+      position: absolute
+      display: block                
+      content: ""   
+      width: 25%
+      height: 2px           
+      top: 50%
+      right: 0                          
+      z-index: 200
+      background-color: #40455a
+  &-menu
+    display: block
+    +montl
+    text-shadow: -1px -1px 1px rgba(#000, 0.4)
+    line-height: 22px
+    color: #b0b2b8    
+    background-color: #40455a
+    padding: 30px 55px
+    border-radius: 20px 20px 0 0
+    background-image: url('../img/mon/mon_rev/444.png')
+    background-repeat: no-repeat
+    box-shadow: -1px -1px 4px rgba(0,0,0,0.8)
+  &-block
+    background-radius: 20px
+    overflow: hidden
+
+      
+
+@media (max-width: 560px) 
+  .reservation
+    &-menu
+      padding: 20px 30px
+      border-radius: 10px 10px 0 0
+      font-size: 14px
+      line-height: 22px
+      color: #b0b2b8
+      +montb
+    &-title 
+      margin-bottom: 20px
+      h2
+        font-size: 24px   
+           
+      &:before
+        display: none
+    &-description
+      margin-bottom: 30px
+      p
+        line-height: 1.5
+
+      &__working-days,&__holidays
+        line-height: 1.2
+       

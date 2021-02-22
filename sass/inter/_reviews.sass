@@ -1,23 +1,54 @@
 .reviews
     &-section
+        display: block
+        padding-bottom: 50px
+    &__text
+
     &__title
+        position: relative
         +montb
         margin-bottom: 50px
-        
+        &:before
+            position: absolute
+            display: block                
+            content: ""   
+            width: 30%
+            height: 2px           
+            top: 50%
+            right: 0                           
+            z-index: 200
+            background-color: #40455a
+    &__btn
+        outline: none
+        display: block
+        position: absolute
+        right: 0
+        top: calc(50% - 15px)
+        +montl
+        border: 2px solid #40455a
+        border-radius: 10px 0 0 10px
+        background-color: $bgc
+        color: darken($white, 20%)
+        padding: 5px 10px
+        z-index: 500 
+        cursor: pointer
+        &:hover
+            color: $white
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
 
     &__cards
         display: flex
+        height: 0px
+        opacity: 0
         flex-wrap: wrap
         justify-content: space-between
-
-
-
+        overflow: hidden
     &-card
         position: relative
-        width: 370px
+        width: 100%
         margin-bottom: 30px
         //border: 1px solid  $black
-        padding: 30px
+        padding: 50px 170px 50px
         box-shadow: -1px -1px 4px rgba(0,0,0,0.8)
         border-radius: 10px
         background-image:  url('../img/mon/mon_rev/444.png')
@@ -33,30 +64,74 @@
             border-bottom: 1px solid #4d5163    
             background-color: #3b3f54 
             z-index: 30
-            &:before
-                position: absolute
-                display: block                
-                content: ""                  
-                background-image: url('../img/mon/mon_rev/user.png')
-                width: 70px
-                height: 70px
-                border-radius: 50% 
-                top: -38px
-                right: 25%
-                border: 3px solid #40455a                
-                z-index: 200
-
-            
-
+        &__img
+            position: absolute
+            display: block                
+            content: ""         
+            width: 70px
+            height: 70px
+            border-radius: 50% 
+            top: -38px
+            right: 25%
+            border: 3px solid #40455a                
+            z-index: 200
 
         &__title
-            margin-bottom: 100px
+            margin-bottom: 30px
             +montl
             font-size: 18px
         &__text
-            font-size: 12px
+            font-size: 14px
             +montl
             color: #b0b2b8
             line-height: 2
+.open-cards
+     
+    animation: fadin    2.5s   
+    animation-fill-mode: forwards
+    animation-iteration-count: 1
+    
+    
+    
+
+    
+    
+@keyframes fadin
+    from
+        opacity: 0
+        height: 0px
+    to
+        opacity: 1
+        height: 100%
+
+
+
+@media (max-width: 430px)
+    .reviews
+        &-section
+            margin-bottom: 30px
+            padding-bottom: 0
+        &__title
+            h2
+                font-size: 24px            
+            margin-bottom: 30px
+            &:before               
+                width: 50%
+        &__card
+            padding: 30px 15px 
+        &-card
+            &__user
+                top: 90px
+                left: 0
+                width: 100px
+            &__img
+                left: 15px
+                top: -30px 
+            &__title
+                margin-bottom: 80px
+
+
+                
+
             
     

@@ -1,0 +1,143 @@
+.still
+    //: flex
+    padding-top: 30px
+    
+
+    &-section
+        margin-bottom: 100px
+        
+
+    
+    &-title        
+        display: block    
+        position: relative
+        z-index: 10                     
+        margin-bottom: 30px
+        h2            
+            color: $white
+            background-color: $bgc
+            //padding-right: 20px
+            //position: absolute
+            //z-index: 20
+            +montb 
+        &:before
+            content: "" 
+            display: block            
+            position: absolute                   
+            width: 30%
+            height: 2px           
+            top: 15px
+            right: 0                           
+            z-index: 2
+            background-color: #40455a
+        //font-size: 36px
+    
+        
+    &-wrap1
+        display: flex
+        justify-content: start
+        flex-wrap: nowrap
+        margin-bottom: 50px        
+        //background-color: green
+        &__img    
+            display: block         
+            position: relative
+            min-width: 320px 
+            
+            width: 320px
+            height: 200px
+            margin-right: 35px             
+            overflow: hidden         
+            background-color: $bgc
+            z-index: 400
+            margin-bottom: 15px
+            img
+                position: absolute
+                top: 50%
+                left: 50%
+                width: 320px
+                hight: 200px
+                object-fit: cover 
+                z-index: 1400
+                             
+                transform: translate(-50%, -50%)
+
+        &__description
+                  
+        &__text
+            display: block
+            font-size: 16px
+            line-height: 1.5
+            +montl
+            margin-bottom: 35px
+            color: #b0b2b8
+        &__title
+            margin-bottom: 10px
+            +montl
+            font-size: 30px
+        &__button
+
+@media (max-width: 576px)
+    .still 
+        padding-top: 0px      
+        &-section                        
+                
+        &-wrap1            
+            align-items: center
+            flex-direction: column
+            flex-wrap: wrap         
+            
+            &__img 
+                margin-right: 0 
+                width: 400px                                
+                hight: 300px              
+                
+                overflow: hidden           
+
+                background-color: $bgc
+                img          
+                   
+                    width: 400px
+                    hight: 300px
+        &-title
+            h2
+                font-size: 24px
+            &:before
+                display: none
+@media (max-width: 430px)
+    .still               
+        &-wrap1            
+            align-items: flex-start
+            flex-direction: column
+            flex-wrap: wrap             
+            &__img 
+                min-width: 200px
+                max-width: 280px
+                
+                width: 280px 
+                height: 200px               
+                overflow: hidden
+                img
+                    width: 250px
+                    height: 170px                
+@media (max-width: 370px)  
+    .still               
+        &-wrap1            
+            align-items: flex-start
+            flex-direction: column
+            flex-wrap: wrap             
+            &__img 
+                display: block
+                width: 280px 
+                height: 170px             
+                //overflow: hidden
+                img
+                    width: 280px
+                    height: 170px                
+   
+                    
+                    
+
+
+
+                   
